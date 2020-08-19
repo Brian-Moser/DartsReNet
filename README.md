@@ -1,9 +1,9 @@
 # DartsReNet: Exploring new RNN cells in ReNet architectures
-**Authors:** Brian B. Moser, Federico Raue, Jörn Hees, Andreas Dengel
+**Authors:** [Brian B. Moser](https://www.dfki.de/en/web/about-us/employee/person/brmo01/), [Federico Raue](https://www.dfki.de/en/web/about-us/employee/person/fera02/), [Jörn Hees](https://www.dfki.de/en/web/about-us/employee/person/johe02/), [Andreas Dengel](https://www.dfki.de/en/web/about-us/employee/person/ande00/)
 
-**Institutes:** German Research Center for Artificial Intelligence (DFKI), TU Kaiserslautern, Germany
+**Institutes:** [German Research Center for Artificial Intelligence (DFKI)](https://www.dfki.de/en/web/) and [TU Kaiserslautern](https://www.uni-kl.de/en/), Germany
 
-The code was produced as part of the paper "DartsReNet: Exploring new RNN cells in ReNet architectures", published at ICANN2020.
+The code was produced as part of the paper "DartsReNet: Exploring new RNN cells in ReNet architectures", published at [ICANN2020](https://e-nns.org/icann2020/).
 The goal of this work was to derive novel RNN cells for Image Classification. In contrast to standard RNN cell designs like LSTM and GRU, we found cells that are beneficial for two dimensional sequences (images). We accomplished this by using DARTS, a fast NAS approach, and ReNet, an RNN alternative to convolution layers.
 This repository was used to derive and to evaluate new cells.
 
@@ -13,16 +13,18 @@ The basis is given by the two papers:
 - [ReNet](https://arxiv.org/abs/1505.00393)
 - [DARTS](https://arxiv.org/abs/1806.09055)
 
+We implemented ReNet ourself in [PyTorch](https://pytorch.org/) and modified the code of DARTS (GitHub-Link: https://github.com/quark0/darts).
+
 
 ## Requirements
 We have the same constraints as DARTS since we were extending the code of the authors.
 ```
 Python >= 3.5.5, PyTorch == 0.3.1, torchvision == 0.2.0
 ```
-NOTE: PyTorch 0.4+ is not supported at this moment and would lead to OOM.
+**NOTE:** PyTorch 0.4+ is not supported at this moment and would lead to OOM.
 
 ## Finding new Cells
-We used CIFAR-10 for Cell Search. For Cell Evaluation, we used CIFAR-10 and SVHN.
+We used [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) for Cell Search. For Cell Evaluation, we used CIFAR-10 and [SVHN](http://ufldl.stanford.edu/housenumbers/).
 
 ### Cell Search
 Finding new cells can be done by using a single command:
