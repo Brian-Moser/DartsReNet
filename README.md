@@ -56,7 +56,14 @@ python train.py --rnn_cell="directional" --arch=DARTS_Directional
 ```
 
 ## Citation
-Please cite our [paper](), if you use it:
+Please cite our [paper](https://link.springer.com/chapter/10.1007/978-3-030-61609-0_67), if you use it:
 ```
-TO BE PUBLISHED
+@inproceedings{moser2020dartsrenet,
+  title={DartsReNet: Exploring New RNN Cells in ReNet Architectures},
+  author={Moser, Brian B and Raue, Federico and Hees, J{\"o}rn and Dengel, Andreas},
+  booktitle={International Conference on Artificial Neural Networks},
+  pages={850--861},
+  year={2020},
+  organization={Springer}
+}
 ```
